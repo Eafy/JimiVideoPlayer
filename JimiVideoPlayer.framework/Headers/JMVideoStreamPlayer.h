@@ -261,6 +261,8 @@ typedef enum : NSUInteger {
  */
 - (void)stop;
 
+- (void)reStart;
+
 /**
  切换摄像头
 
