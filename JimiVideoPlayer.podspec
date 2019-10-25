@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JimiVideoPlayer"
-  s.version      = "1.3.7"
+  s.version      = "1.3.7.1"
   s.summary      = "Jimi RTMP Video Player SDK for iOS at CocoaPods."
 
   s.description  = <<-DESC

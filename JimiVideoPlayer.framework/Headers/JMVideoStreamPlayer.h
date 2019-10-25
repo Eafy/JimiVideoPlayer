@@ -261,6 +261,9 @@ typedef enum : NSUInteger {
  */
 - (void)stop;
 
+/**
+重新启动网关及Web服务
+*/
 - (void)reStart;
 
 /**
