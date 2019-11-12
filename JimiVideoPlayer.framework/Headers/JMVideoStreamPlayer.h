@@ -109,6 +109,7 @@ typedef enum : NSUInteger {
 @property (nonatomic,assign) BOOL mute;                 //静音设置
 @property (nonatomic,assign) double delayMaxTime;       //允许播放的缓冲(延迟)时间(默认10.0毫秒)
 @property (nonatomic,assign) double timeoutInterval;        //http请求超时时间(默认45.0秒)，包括startPlayLive、startPlayback、stopPlay、startTalk、stopTalk、sendRequestWithParameterDic等接口中附带的请求
+@property (nonatomic,assign) NSInteger onlineCount;
 
 #pragma mark - SDK初始化及信息配置
 
@@ -414,8 +415,9 @@ typedef enum : NSUInteger {
  @param audioBps 音频码率(B/s)
  @param timestamp 视频时间戳，实时视频已经播放的时长
  @param totalFrameCount 总接收到的视频帧数
+ @param onlineCount 在线人数
  */
-- (void)didStreamPlayerReceiveFrameInfoWithVideoWidth:(NSInteger)videoWidth videoHeight:(NSInteger)videoHeight videoBPS:(NSInteger)videoBps audioBPS:(NSInteger)audioBps timestamp:(NSUInteger)timestamp totalFrameCount:(NSInteger)totalFrameCount;
+- (void)didStreamPlayerReceiveFrameInfoWithVideoWidth:(NSInteger)videoWidth videoHeight:(NSInteger)videoHeight videoBPS:(NSInteger)videoBps audioBPS:(NSInteger)audioBps timestamp:(NSUInteger)timestamp totalFrameCount:(NSInteger)totalFrameCount onlineCount:(NSInteger)onlineCount;
 
 /**
  网关透传设备发送的消息(即设备端自定义发送的信息)

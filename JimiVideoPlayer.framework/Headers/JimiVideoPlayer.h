@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JMVideoStreamPlayer.h"
+#import "JMVideoStreamPlayer+Ext.h"
 #import "JMLogController.h"
 
 @interface JimiVideoPlayer : NSObject
@@ -63,5 +63,10 @@
  @return YES：转码完成
  */
 + (BOOL)startVideoConverter:(NSString *)inFilePath outFilePath:(NSString *)outFilePath;
+
+/**
+中断视频转码
+*/
++ (void)interruptVideoConverter;
 
 @end
