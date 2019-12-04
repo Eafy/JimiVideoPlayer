@@ -42,7 +42,7 @@ typedef void (^JMSwitchCameraHandler)(BOOL success, NSString * _Nullable url, NS
 typedef enum : NSUInteger {
     STREAM_VIDEO_STATUS_NONE = 0,
     STREAM_VIDEO_STATUS_PREPARE,                //正在准备播放
-    STREAM_VIDEO_STATUS_START,                  //正在播放
+    STREAM_VIDEO_STATUS_START,                  //开始或正在播放
     STREAM_VIDEO_STATUS_STOP,                   //播放结束
     
     STREAM_VIDEO_STATUS_ERR_URL_GET = 4,        //获取URL失败
@@ -54,7 +54,7 @@ typedef enum : NSUInteger {
     STREAM_VIDEO_STATUS_ERR_HTTP_HOST,          //域名或IP错误
     STREAM_VIDEO_STATUS_ERR_HTTP_PARAMETER,     //http参数错误
     STREAM_VIDEO_STATUS_ERR_SERVER_DATA,        //服务器数据解析异常
-    STREAM_VIDEO_STATUS_ERR_DEVICE_REPLY_FAIL,  //设备回复“失败”
+    STREAM_VIDEO_STATUS_ERR_DEVICE_REPLY_FAIL,  //设备回复“失败”及拒绝响应
     STREAM_VIDEO_STATUS_ERR_NETWORK_ANOMALY,    //网络异常
 } STREAM_PLAY_STATUS;
 
