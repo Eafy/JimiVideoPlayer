@@ -65,6 +65,15 @@
 + (BOOL)startVideoConverter:(NSString *)inFilePath outFilePath:(NSString *)outFilePath;
 
 /**
+视频转码成H264+AAC数据流文件（强制转码）
+
+@param inFilePath 视频输入路径
+@param outFilePath 视频输出路径
+@return YES：转码完成
+*/
++ (BOOL)startForceVideoConverter:(NSString *)inFilePath outFilePath:(NSString *)outFilePath;
+
+/**
 中断视频转码
 */
 + (void)interruptVideoConverter;
