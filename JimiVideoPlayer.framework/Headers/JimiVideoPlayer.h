@@ -78,4 +78,8 @@
 */
 + (void)interruptVideoConverter;
 
+/// 视频文件是否是AAC编码
+/// @param filePath 视频文件路径
++ (BOOL)isAACforVideoFile:(NSString *)filePath;
+
 @end
