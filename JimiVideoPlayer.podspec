@@ -21,4 +21,5 @@ Pod::Spec.new do |s|
 
 end
 
+#推送命令
 #pod repo push JimiVideoPlayer.podspec --verbose --allow-warnings --use-libraries
